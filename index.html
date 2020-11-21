@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>PhoneBook With Firebase</title>
+</head>
+<body>
+    
+
+    <div class="container center">
+    
+        <h3 class="pink-text text-darken-1">PHONE BOOK</h3>
+        <span>built with materialize and Firebase's Cloud Firestore.
+        </span>
+        <p>your contacts stick to my database, you'll see them everytime you come here ;)</p>
+        <p class="error-paragraph">
+            
+        </p>
+
+        
+        
+        <form class="my-form">
+            <div class="input-field my-input">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field my-input">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+            </div>
+            <div class="input-field my-input">
+                <input id="phone_number" type="number" class="validate">
+                <label for="phone_number">Phone Number</label>
+            </div>
+              
+            <a class="my-submit pink lighten-3 waves-effect waves-light btn pulse">Add User</a>
+                
+            
+        </form>
+        <table class="stripped">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Phone Number</th>
+                    <th></th>
+                </tr>
+            </thead>
+            
+            <tbody class="table-body">
+
+            </tbody>
+
+        </table>
+        
+    </div>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+    <script>
+        var firebaseConfig = {
+          apiKey: "AIzaSyAXTx_IlFpr9JQl7Wf6fZzqyCi5kCrqEn4",
+          authDomain: "first-fire-72cf5.firebaseapp.com",
+          databaseURL: "https://first-fire-72cf5.firebaseio.com",
+          projectId: "first-fire-72cf5",
+          storageBucket: "first-fire-72cf5.appspot.com",
+          messagingSenderId: "410200641374",
+          appId: "1:410200641374:web:58aa69b30c5e3cbb4249cf",
+          measurementId: "G-DYMVJ5YSDN"
+        };
+        firebase.initializeApp(firebaseConfig);
+      </script>
+    <script src="./app.js"></script>
+</body>
+</html>

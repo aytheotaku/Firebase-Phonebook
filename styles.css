@@ -1,0 +1,17 @@
+.my-input{
+    width: 100%;
+    margin: 1em auto;
+}
+
+.my-form{
+    width: 50%;
+    margin: 1em auto;
+}
+
+.error-paragraph{
+    color: #d81b60;
+}
+
+.hide{
+    display: none;
+}
